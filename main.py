@@ -40,7 +40,6 @@ class JapaneseTranslator(QMainWindow):
 
         if self.file_name:
             res = funcs.translate(image_path=self.file_name,
-                                  pronun=True,
                                   lang=chosen_language)
             self.japaneseText.setText(res[0])
             self.translatedText.setText(res[2])

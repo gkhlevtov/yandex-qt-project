@@ -18,7 +18,7 @@ lang_dict = {"Русский": "ru",
              "Корейский": "ko"}  # Словарь языковых обозначений
 
 
-def translate(image_path, pronun=False, lang='en'):
+def translate(image_path, lang='en'):
     """Функция перевода текста"""
 
     img = cv2.imread(image_path)
