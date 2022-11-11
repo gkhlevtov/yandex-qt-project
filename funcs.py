@@ -4,7 +4,8 @@ from googletrans import Translator  # 4.0.0rc1
 
 translator = Translator()  # Обозначаем переводчик
 config = r'--oem 3 --psm 6 -l jpn'  # Задаём параметры перевода
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'  # Указываем путь к tesseract
+# Необходимо распаковать Tesseract-OCR.rar в директорию проекта
+pytesseract.pytesseract.tesseract_cmd = 'Tesseract-OCR\\tesseract.exe'  # Указываем путь к tesseract
 lang_dict = {"Русский": "ru",
              "Английский": "en",
              "Немецкий": "de",
