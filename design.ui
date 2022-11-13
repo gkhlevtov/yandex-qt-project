@@ -525,13 +525,41 @@ p, li { white-space: pre-wrap; }
       <pointsize>16</pointsize>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <layout class="QGridLayout" name="imageEditLayout">
+     <item row="2" column="0">
+      <widget class="QPushButton" name="sharpnessUpButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Повысить
+резкость</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="sharpnessDownButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Понизить
+резкость</string>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="1">
       <widget class="QPushButton" name="contrastDownButton">
        <property name="font">
         <font>
          <pointsize>16</pointsize>
         </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="text">
         <string>Понизить
@@ -549,6 +577,9 @@ p, li { white-space: pre-wrap; }
          <pointsize>16</pointsize>
         </font>
        </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>Повысить
 яркость</string>
@@ -561,6 +592,9 @@ p, li { white-space: pre-wrap; }
         <font>
          <pointsize>16</pointsize>
         </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="text">
         <string>Понизить
@@ -575,25 +609,12 @@ p, li { white-space: pre-wrap; }
          <pointsize>16</pointsize>
         </font>
        </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>Повысить
 контраст</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="sharpnessUpButton">
-       <property name="text">
-        <string>Повысить
-резкость</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QPushButton" name="sharpnessDownButton">
-       <property name="text">
-        <string>Понизить
-резкость</string>
        </property>
       </widget>
      </item>
