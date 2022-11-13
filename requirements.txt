@@ -1,0 +1,11 @@
+googletrans==4.0.0rc1
+opencv-python==4.5.4.58
+Pillow==8.4.0
+PyQt5==5.15.4
+pyqt5-plugins==5.15.4.2.2
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.9.0
+PyQt5-stubs==5.15.2.0
+pyqt5-tools==5.15.4.3.2
+pytesseract==0.3.10
+opencv-python==4.5.4.58
