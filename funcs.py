@@ -1,5 +1,5 @@
 import pytesseract  # 0.3.10
-from cv2 import cv2  # opencv-python 4.5.4.58
+from PIL import Image
 from googletrans import Translator  # 4.0.0rc1
 
 translator = Translator()  # Обозначаем переводчик
@@ -19,12 +19,10 @@ lang_dict = {"Русский": "ru",
              "Корейский": "ko"}  # Словарь языковых обозначений
 
 
-def translate(image_path, lang='en'):
+def translate(image, lang='en'):
     """Функция перевода текста"""
 
-    img = cv2.imread(image_path)
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    img_text = pytesseract.image_to_string(img, config=config). \
+    img_text = pytesseract.image_to_string(image, config=config). \
         replace('\n', ''). \
         replace('.', '. '). \
         replace(' ', ''). \
