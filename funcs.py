@@ -1,5 +1,4 @@
 import pytesseract  # 0.3.10
-from PIL import Image
 from googletrans import Translator  # 4.0.0rc1
 
 translator = Translator()  # Обозначаем переводчик
