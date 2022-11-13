@@ -1,5 +1,4 @@
 googletrans==4.0.0rc1
-opencv-python==4.5.4.58
 Pillow==8.4.0
 PyQt5==5.15.4
 pyqt5-plugins==5.15.4.2.2
