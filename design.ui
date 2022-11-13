@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>1920</width>
-    <height>1040</height>
+    <height>1005</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -172,7 +172,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>610</y>
+      <y>560</y>
       <width>290</width>
       <height>71</height>
      </rect>
@@ -193,9 +193,9 @@
     <property name="geometry">
      <rect>
       <x>950</x>
-      <y>690</y>
+      <y>630</y>
       <width>20</width>
-      <height>301</height>
+      <height>331</height>
      </rect>
     </property>
     <property name="lineWidth">
@@ -209,9 +209,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>880</y>
+      <y>820</y>
       <width>921</width>
-      <height>101</height>
+      <height>131</height>
      </rect>
     </property>
     <property name="font">
@@ -230,7 +230,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>700</y>
+      <y>640</y>
       <width>921</width>
       <height>171</height>
      </rect>
@@ -323,9 +323,9 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>979</x>
-      <y>700</y>
+      <y>640</y>
       <width>921</width>
-      <height>281</height>
+      <height>311</height>
      </rect>
     </property>
     <property name="font">
@@ -351,7 +351,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>300</y>
+      <y>250</y>
       <width>291</width>
       <height>30</height>
      </rect>
@@ -387,7 +387,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>220</y>
+      <y>200</y>
       <width>291</width>
       <height>41</height>
      </rect>
@@ -460,7 +460,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>180</y>
+      <y>160</y>
       <width>290</width>
       <height>30</height>
      </rect>
@@ -500,8 +500,8 @@ p, li { white-space: pre-wrap; }
      <rect>
       <x>330</x>
       <y>90</y>
-      <width>1561</width>
-      <height>591</height>
+      <width>1571</width>
+      <height>531</height>
      </rect>
     </property>
     <property name="text">
@@ -509,6 +509,112 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>291</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <layout class="QGridLayout" name="imageEditLayout">
+     <item row="0" column="1">
+      <widget class="QPushButton" name="contrastDownButton">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Понизить
+контраст</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="brightnessUpButton">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Повысить
+яркость</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="brightnessDownButton">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Понизить
+яркость</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="contrastUpButton">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Повысить
+контраст</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="sharpnessUpButton">
+       <property name="text">
+        <string>Повысить
+резкость</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="sharpnessDownButton">
+       <property name="text">
+        <string>Понизить
+резкость</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Изменение изображения</string>
     </property>
    </widget>
   </widget>
